@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* background-image: 'Ford-Desktop.jpg'; */
+   background: url('./Ford-Desktop.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
