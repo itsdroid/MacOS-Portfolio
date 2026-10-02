@@ -1,0 +1,242 @@
+.musicbar-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  box-sizing: border-box;
+}
+
+.youtube-player {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.musicbar {
+  display: flex;
+  align-items: center;
+  width: min(94%, 480px);
+  padding: 0.6rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  background-color: rgba(18, 18, 22, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.musicbar:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.album-art {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.album-art.spin-slow {
+  animation: yt-album-spin 10s linear infinite;
+}
+
+@keyframes yt-album-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-info {
+  min-width: 0;
+  flex: 1;
+  padding: 0 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.song-title {
+  margin: 0;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.25;
+}
+
+.song-author {
+  margin: 0.15rem 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+/* Single progress bar styling */
+.progress-wrapper {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.35rem;
+  cursor: pointer;
+}
+
+.progress-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: height 0.15s ease;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 9999px;
+  background: #ff0000;
+  transition: height 0.15s ease;
+  pointer-events: none;
+}
+
+.progress-thumb {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+
+.progress-wrapper:hover .progress-track,
+.progress-wrapper:hover .progress-fill {
+  height: 6px;
+}
+
+.progress-wrapper:hover .progress-thumb {
+  opacity: 1;
+}
+
+.progress-input {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.time-display {
+  margin-top: 0.2rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.skip-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+  opacity: 0.85;
+}
+
+.skip-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.skip-button:active {
+  transform: scale(0.95);
+}
+
+.skip-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.06);
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+.play-button:active {
+  transform: scale(0.95);
+}
+
+.play-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.play-icon-offset {
+  margin-left: 2px;
+}

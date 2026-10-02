@@ -1,0 +1,221 @@
+/**
+ * @file: profile.config.ts
+ * @author: Shubham Popalghat
+ * @summary: Web Developer • UI Designer • Graphic Designer.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  web: [
+    "MERN Stack",     // MongoDB, Express.js, React.js, Node.js
+    "GitHub",
+    "Version Control",
+  ],
+  design: [
+    "Figma",
+    "Framer",
+    "Spline",
+    "Photoshop",
+    "Illustrator",
+  ],
+  development: [
+    "Python",         // Projects & Scripts
+    "Postman",        // API Testing
+  ],
+  softSkills: [
+    "Team Collaboration",
+    "Problem-Solving",
+    "Creativity",
+    "Innovation",
+  ]
+};
+
+// --------------------------------------------------
+// 2. PROFESSIONAL EXPERIENCE
+// --------------------------------------------------
+
+class ProfessionalHistory {
+
+  /**
+   * CURRENT ROLE
+   * @period 2025 - 2026
+   */
+  public GoogleDeveloperGroups_SCOE(): void {
+    const role = "Web Developer Lead";
+
+    // Developed responsive web application using MERN Stack.
+    // Conducted a hands-on workshop based on MCP tools
+    // and Agentic Development with Google Gemini API
+    // and Antigravity IDE.
+  }
+
+  /**
+   * GRAPHIC DESIGN ROLE
+   * @period 2024 - 2025
+   */
+  public GoogleDeveloperGroups_SCOE_Design(): void {
+    const role = "Graphic Designer";
+
+    // Designed posters, social media creatives, and event branding.
+    // Collaborated with team members to enhance visual identity
+    // and online presence.
+    // Assisted in UI and frontend development of GDG website.
+    //
+    // Portfolio: GDG SCOE
+  }
+
+  /**
+   * GRAPHIC DESIGN ROLE
+   * @period 2024 - 2025
+   */
+  public ECell_SCOE_Pune(): void {
+    const role = "Graphic Designer";
+
+    // Collaborated on innovative ideas, event planning,
+    // and community activities.
+    // Contributed through design and creative support.
+    // Built communication and teamwork skills.
+    //
+    // Portfolio: ECell SCOE Pune
+  }
+
+  /**
+   * FREELANCE / CLIENT EXPERIENCE
+   * @period 2022 - 2024
+   */
+  public Indiator_Travels(): void {
+    const role = "Graphic Designer";
+
+    // Gained professional client experience.
+    // Improved design quality and delivered work
+    // aligned with business needs.
+    //
+    // Portfolio: Indiator Travels
+  }
+}
+
+// --------------------------------------------------
+// 3. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  [
+    "Sinhgad College of Engineering, Vadgaon BK, Pune",
+    "B.E. Electronics & Telecommunication (2023 - 2027)"
+  ],
+  [
+    "Bharat Jr. College, Tq. Risod, Dist. Washim",
+    "Higher Secondary Certificate (12th, Science) (2022 - 2023)"
+  ]
+]);
+
+// --------------------------------------------------
+// 4. ABOUT ME
+// --------------------------------------------------
+
+const profile = {
+  role: [
+    "Web Developer",
+    "UI Designer",
+    "Graphic Designer",
+  ],
+
+  summary: `
+    Passionate Web Developer with strong skills in UI Design
+    and Graphic Design. Enjoys building creative solutions
+    with a focus on perfection and innovation.
+
+    Experience includes freelance work for multiple clients
+    in graphic design, web development, and Python.
+
+    Always eager to learn, build, and collaborate while
+    turning ideas into meaningful digital experiences.
+  `
+};
+
+// --------------------------------------------------
+// 5. ACHIEVEMENTS
+// --------------------------------------------------
+
+interface Achievement {
+  title: string;
+  details: string;
+}
+
+const achievements: Achievement[] = [
+  {
+    title: "Hackathon — 1st Prize",
+    details:
+      "Team secured 1st Prize in the Hackathon conducted at " +
+      "Bhivarabai Sawant College of Engineering, Narhe, Pune.",
+  },
+  {
+    title: "Industry Recognition",
+    details:
+      "Work recognized and appreciated by companies including " +
+      "Sunlit Solar India (TATA Power distributors) and Indiator Travels.",
+  }
+];
+
+// --------------------------------------------------
+// 6. EDUCATION & DEVELOPMENT
+// --------------------------------------------------
+
+const academicDevelopment = {
+  bachelor: [
+    "Focus on tech-related subjects",
+    "Web development projects",
+    "Engaging with like-minded people",
+    "Positive and collaborative community building",
+  ],
+
+  higherSecondary: [
+    "Participated in events and design competitions",
+    "Started learning graphic design and mastered design software",
+    "Built a strong foundation in problem-solving and logical reasoning",
+  ]
+};
+
+// --------------------------------------------------
+// 7. CONTACT
+// --------------------------------------------------
+
+const contact = {
+  email: "shubhampopalghat77@gmail.com",
+  phone: "+91 8149604513",
+  location:
+    "Crystal Heights, Kohinoor Society, Near Polyhub Food Court, " +
+    "Sinhgad Institute Road, Vadgaon BK, Pune",
+};
+
+// --------------------------------------------------
+// 8. PORTFOLIO LINKS
+// --------------------------------------------------
+
+const links = {
+  github: "GitHub",
+  linkedin: "LinkedIn",
+  portfolio: "Portfolio",
+  gdg: "GDG SCOE",
+  ecell: "ECell SCOE Pune",
+  indiatorTravels: "Indiator Travels",
+};
+
+export default new ProfessionalHistory();
+
+
+```bash
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ user --status
+> Name: Shubham Popalghat
+> Role: Web Developer • UI Designer • Graphic Designer
+> Education: B.E. Electronics & Telecommunication
+> Location: Pune, India
+> Status: Learning • Building • Collaborating
+> Loading Profile... [||||||||||] 100%
+> Ready.
+```

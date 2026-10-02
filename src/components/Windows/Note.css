@@ -1,0 +1,10 @@
+.note-window {
+  padding-inline: 0rem;
+  /* padding-block: 0.75rem; */
+  /* padding-bottom: 5rem; */
+
+  /* background-color: transparent !important */
+  pre {
+    background-color: transparent !important;
+  }
+}

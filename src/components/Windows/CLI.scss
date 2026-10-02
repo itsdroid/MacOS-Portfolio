@@ -1,0 +1,13 @@
+.cli-window {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+
+    & > div[name="react-console-emulator"],
+    .react-console-emulator {
+        height: 100% !important;
+        max-height: 100% !important;
+        min-height: 100% !important;
+        border-radius: 0 !important;
+    }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    "title": "DevTrack - Developer Dashboard",
+    "description": "A modern developer dashboard for tracking projects, GitHub activity, and coding progress.",
+    "tags": ["React", "Tailwind CSS", "Node.js", "GitHub API"],
+    "repoLink": "https://github.com/facebook/react",
+    "demoLink": "https://react.dev/"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "title": "CodeVault - Snippet Manager",
+    "description": "A web application to save, organize, search, and share reusable code snippets.",
+    "tags": ["React", "JavaScript", "MongoDB", "Express"],
+    "repoLink": "https://github.com/expressjs/express",
+    "demoLink": "https://expressjs.com/"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "title": "Analytics Pro",
+    "description": "Interactive analytics dashboard for visualizing business metrics and real-time data.",
+    "tags": ["React", "Chart.js", "Node.js", "REST API"],
+    "repoLink": "https://github.com/chartjs/Chart.js",
+    "demoLink": "https://www.chartjs.org/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80",
+    "title": "TaskFlow",
+    "description": "A collaborative task management application with projects, deadlines, and team workflows.",
+    "tags": ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
+    "repoLink": "https://github.com/vercel/next.js",
+    "demoLink": "https://nextjs.org/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+    "title": "StudyMate",
+    "description": "A student productivity platform for managing notes, assignments, schedules, and study sessions.",
+    "tags": ["React", "Firebase", "Tailwind CSS", "JavaScript"],
+    "repoLink": "https://github.com/firebase/firebase-js-sdk",
+    "demoLink": "https://firebase.google.com/"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "title": "CloudDesk",
+    "description": "A cloud-based workspace for managing documents, files, and team collaboration.",
+    "tags": ["React", "Supabase", "TypeScript", "Tailwind CSS"],
+    "repoLink": "https://github.com/supabase/supabase",
+    "demoLink": "https://supabase.com/"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+    "title": "TeamBoard",
+    "description": "A visual team collaboration board inspired by modern Kanban project management tools.",
+    "tags": ["Vue", "Node.js", "Socket.io", "MongoDB"],
+    "repoLink": "https://github.com/socketio/socket.io",
+    "demoLink": "https://socket.io/"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+    "title": "EventHub",
+    "description": "An event discovery and registration platform for finding and managing local events.",
+    "tags": ["React", "Node.js", "Express", "MySQL"],
+    "repoLink": "https://github.com/mysql/mysql-server",
+    "demoLink": "https://www.mysql.com/"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
+    "title": "SecureAuth",
+    "description": "Authentication service featuring secure login, registration, sessions, and role-based access.",
+    "tags": ["Node.js", "JWT", "Express", "PostgreSQL"],
+    "repoLink": "https://github.com/auth0/node-jsonwebtoken",
+    "demoLink": "https://jwt.io/"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    "title": "IoT Monitor",
+    "description": "Real-time IoT monitoring dashboard for displaying sensor data and device status.",
+    "tags": ["React", "Python", "MQTT", "Arduino"],
+    "repoLink": "https://github.com/eclipse-mosquitto/mosquitto",
+    "demoLink": "https://mosquitto.org/"
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "title": "ServerWatch",
+    "description": "Server monitoring dashboard that tracks uptime, resource usage, and system performance.",
+    "tags": ["React", "Node.js", "Docker", "Linux"],
+    "repoLink": "https://github.com/docker/compose",
+    "demoLink": "https://www.docker.com/"
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    "title": "FinanceFlow",
+    "description": "Personal finance management application for tracking expenses, budgets, and financial goals.",
+    "tags": ["React", "TypeScript", "Firebase", "Chart.js"],
+    "repoLink": "https://github.com/chartjs/Chart.js",
+    "demoLink": "https://www.chartjs.org/"
+  }
+]
