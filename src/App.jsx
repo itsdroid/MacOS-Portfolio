@@ -18,6 +18,7 @@ import Clock from './components/Windows/Clock.jsx';
 import YTMusic from './components/Windows/YTMusic/YTMusic.jsx';
 import MusicPlayer from './components/MusicPlayer.jsx';
 import TimeWidget from './components/Widgets/TimeWidget.jsx';
+import Calculator from './components/Widgets/Calculator.jsx';
 
 function App() {
   const [windowState, setWindowState] = useState({
@@ -28,7 +29,9 @@ function App() {
     Note: false,
     Linkedin: false,
     Clock: false,
-    YTMusic: false
+    YTMusic: false,
+    Calculator: false
+
   });
 
   return (
@@ -43,8 +46,10 @@ function App() {
         {windowState.Note && <Note setWindowState={setWindowState} />}
         {windowState.Clock && <Clock setWindowState={setWindowState} />}
         {windowState.YTMusic && <YTMusic setWindowState={setWindowState} />}
-        <TimeWidget/>
-        
+        {windowState.Calculator && <Calculator setWindowState={setWindowState} />}
+
+        <TimeWidget />
+
         <Dock windowState={windowState} setWindowState={setWindowState} />
       </main>
     </MusicProvider>
