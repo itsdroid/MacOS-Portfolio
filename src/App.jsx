@@ -18,7 +18,7 @@ import Clock from './components/Windows/Clock.jsx';
 import YTMusic from './components/Windows/YTMusic/YTMusic.jsx';
 import MusicPlayer from './components/MusicPlayer.jsx';
 import TimeWidget from './components/Widgets/TimeWidget.jsx';
-import Calculator from './components/Widgets/Calculator.jsx';
+import Calculator from './components/Windows/Calculator.jsx';
 
 function App() {
   const [windowState, setWindowState] = useState({
