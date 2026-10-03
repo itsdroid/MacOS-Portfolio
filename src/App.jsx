@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Home from './Home.jsx';
-import './App.scss';
+import './App.css';
 import Dock from './components/Dock.jsx';
 import Nav from './components/Nav.jsx';
 import MacWindow from './components/Windows/MacWindow.jsx';
+import { MusicProvider } from './contexts/MusicContext.jsx';
 import GitHub from './components/Windows/GitHub.jsx';
 import Note from './components/Windows/Note.jsx';
 import Resume from './components/Windows/Resume.jsx';
@@ -15,6 +16,9 @@ import Terminal from 'react-console-emulator';
 import Linkedin from './components/Windows/Linkedin.jsx';
 import Clock from './components/Windows/Clock.jsx';
 import YTMusic from './components/Windows/YTMusic/YTMusic.jsx';
+import MusicPlayer from './components/MusicPlayer.jsx';
+import TimeWidget from './components/Widgets/TimeWidget.jsx';
+import ControlCenter from './components/Nav-Components/ControlCenter.jsx';
 
 function App() {
   const [windowState, setWindowState] = useState({
@@ -29,17 +33,22 @@ function App() {
   });
 
   return (
-    <main>
-      <Nav />
-      {windowState.Github && <GitHub setWindowState={setWindowState} />}
-      {windowState.Spotify && <Spotify setWindowState={setWindowState} />}
-      {windowState.Resume && <Resume setWindowState={setWindowState} />}
-      {windowState.CLI && <CLI setWindowState={setWindowState} />}
-      {windowState.Note && <Note setWindowState={setWindowState} />}
-      {windowState.Clock && <Clock setWindowState={setWindowState} />}
-      {windowState.YTMusic && <YTMusic setWindowState={setWindowState} />}
-      <Dock windowState={windowState} setWindowState={setWindowState} />
-    </main>
+    <MusicProvider>
+      <MusicPlayer />
+      <main>
+        <Nav />
+        {windowState.Github && <GitHub setWindowState={setWindowState} />}
+        {windowState.Spotify && <Spotify setWindowState={setWindowState} />}
+        {windowState.Resume && <Resume setWindowState={setWindowState} />}
+        {windowState.CLI && <CLI setWindowState={setWindowState} />}
+        {windowState.Note && <Note setWindowState={setWindowState} />}
+        {windowState.Clock && <Clock setWindowState={setWindowState} />}
+        {windowState.YTMusic && <YTMusic setWindowState={setWindowState} />}
+        <TimeWidget/>
+        
+        <Dock windowState={windowState} setWindowState={setWindowState} />
+      </main>
+    </MusicProvider>
   )
 }
 

@@ -16,7 +16,7 @@ export default function Dock({ windowState, setWindowState }) {
                     onClick={() => { setWindowState(state => ({ ...state, CLI: true })) }}
                 >
                     {/* <div className="name">Siri</div> */}
-                    <img className="ico" src="/dock-icons/terminal.webp" alt="" />
+                    <img className="ico" src="/dock-icons/terminal.png" alt="" />
                 </li>
 
                 <li className="li-3"
