@@ -1,5 +1,6 @@
 import '../Nav.css';
 import DateTime from './DateTime';
+import DynamicIsland from './Nav-Components/DynamicIsland';
 
 export default function () {
     return (
@@ -15,9 +16,12 @@ export default function () {
                     <h4 className="nav-item">Terminal</h4>
                 </div>
 
+                <DynamicIsland />
+                
                 <div className="right">
-                    <div className="nav-item nav-icon-item">
-                        <img className="nav-icon" src='/navbar-icons/battery.svg' alt='battery-icon' />
+                    <div
+                     className="nav-item nav-icon-item">
+                        <img style={{width: "25px", height:"25px"}} className="nav-icon" src='/navbar-icons/battery.svg' alt='battery-icon' />
                     </div>
                     <div className="nav-item nav-icon-item">
                         <img className="nav-icon" src='/navbar-icons/wifi.svg' alt='wifi-icon' />

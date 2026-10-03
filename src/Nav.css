@@ -4,21 +4,17 @@ nav {
   height: 28px;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "SF Pro Text", system-ui, sans-serif;
-  font-size: 13px;
-  background: rgba(30, 30, 35, 0.45);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   z-index: 9999;
+  overflow: visible;
 }
-
 nav .nav-container {
   display: flex;
   justify-content: space-between;
@@ -26,22 +22,46 @@ nav .nav-container {
   height: 100%;
   padding-left: 12px;
   padding-right: 12px;
+  overflow: visible;
 }
-
 nav .nav-container .left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2px;
   width: auto;
 }
-
+nav .nav-container .left h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav .nav-container .left .app-title {
+  font-weight: 600;
+  color: #ffffff;
+}
 nav .nav-container .right {
   display: flex;
   align-items: center;
   gap: 4px;
   width: auto;
 }
-
+nav .nav-container .right .nav-icon-item {
+  padding: 3px 6px;
+}
+nav .nav-container .right .nav-icon {
+  width: 19px;
+  height: 19px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .nav-container .right .nav-date {
+  font-size: 15px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  padding: 3px 8px;
+}
 nav .nav-item {
   display: flex;
   align-items: center;
@@ -49,53 +69,12 @@ nav .nav-item {
   margin: 0;
   padding: 3px 8px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1;
   color: rgba(255, 255, 255, 0.92);
   cursor: default;
   transition: background-color 0.15s ease;
 }
-
 nav .nav-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-nav .nav-container .left h4 {
-  margin: 0;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-nav .nav-container .left .app-title {
-  font-weight: 700;
-  color: #ffffff;
-}
-
-nav .apple-item {
-  padding: 3px 7px;
-}
-
-nav .apple-icon {
-  width: 14px;
-  height: 14px;
-  display: block;
-}
-
-nav .nav-icon-item {
-  padding: 3px 6px;
-}
-
-nav .nav-icon {
-  width: 15px;
-  height: 15px;
-  display: block;
-  object-fit: contain;
-}
-
-nav .nav-date {
-  font-size: 13px;
-  font-weight: 400;
-  font-variant-numeric: tabular-nums;
-  padding: 3px 8px;
 }

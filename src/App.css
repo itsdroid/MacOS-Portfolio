@@ -16,7 +16,10 @@ body {
 body {
   min-height: 100%;
   overflow: hidden;
-  background: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2880x1800-1455.jpg);
+  background: url("/MacOs-Wallpapers/wall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
