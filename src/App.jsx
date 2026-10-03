@@ -18,7 +18,6 @@ import Clock from './components/Windows/Clock.jsx';
 import YTMusic from './components/Windows/YTMusic/YTMusic.jsx';
 import MusicPlayer from './components/MusicPlayer.jsx';
 import TimeWidget from './components/Widgets/TimeWidget.jsx';
-import ControlCenter from './components/Nav-Components/ControlCenter.jsx';
 
 function App() {
   const [windowState, setWindowState] = useState({
