@@ -1,6 +1,7 @@
 import { github } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import '../Dock.css';
 import Linkedin from './Windows/Linkedin';
+import Calculator from './Windows/Calculator';
 export default function Dock({ windowState, setWindowState }) {
     return (
         <div className="dock">
@@ -22,10 +23,10 @@ export default function Dock({ windowState, setWindowState }) {
                 <li className="li-3"
                     onClick={() => { setWindowState(state => ({ ...state, Github: true })) }}>
                     {/* <div className="name">GitHub</div> */}
-                    <img style={{width:"95%" , height: "95%"}} className="ico" src="/dock-icons/github.svg" alt="" />
+                    <img style={{ width: "95%", height: "95%" }} className="ico" src="/dock-icons/github.svg" alt="" />
                 </li>
 
-    
+
                 <li className="li-5"
                     onClick={() => { setWindowState(state => ({ ...state, Note: true })) }}>
                     {/* <div className="name">Notes</div> */}
@@ -38,7 +39,7 @@ export default function Dock({ windowState, setWindowState }) {
                     {/* <div className="name">Resume</div> */}
                     <img className="ico" src="/dock-icons/pdf.png" alt="" />
                 </li>
-              
+
 
                 <li className="li-9"
                     onClick={() => { setWindowState(state => ({ ...state, Clock: true })) }}
@@ -50,8 +51,16 @@ export default function Dock({ windowState, setWindowState }) {
                     onClick={() => { setWindowState(state => ({ ...state, Spotify: true })) }}
                 >
                     {/* <div className="name">Spotify</div> */}
-                    <img style={{width:"87%" , height: "87%"}} className="ico" src="/dock-icons/spotify.webp" alt="" />
+                    <img style={{ width: "87%", height: "87%" }} className="ico" src="/dock-icons/spotify.webp" alt="" />
                 </li>
+
+                <li className="li-10"
+                    onClick={() => { setWindowState(state => ({ ...state, Calculator: true })) }}
+                >
+                    {/* <div className="name">Calculator</div> */}
+                    <img style={{ width: "95%", height: "95%" }} className="ico" src="/dock-icons/calculator.png" alt="" />
+                </li>
+
                 <li className="li-11"
                     onClick={() => { window.open("mailto:shubhampopalghat77@gmail.com") }}
                 >
