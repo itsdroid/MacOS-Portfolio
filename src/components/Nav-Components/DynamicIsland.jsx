@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMusic } from "../../contexts/MusicContext.jsx";
-import "./DynamicIsland.scss";
+import "./DynamicIsland.css";
 
 function fmt(s) {
     if (!s || isNaN(s) || s < 0) return "0:00";

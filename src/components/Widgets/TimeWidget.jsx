@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./TimeWidget.scss";
+import "./TimeWidget.css";
 
 export default function ClockWidget() {
     const [now, setNow] = useState(new Date());
