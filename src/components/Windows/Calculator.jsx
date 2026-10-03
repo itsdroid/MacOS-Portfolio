@@ -1,5 +1,5 @@
 import MacWindow from "./MacWindow";
-import "./Calculator.scss";
+import "./Calculator.css";
 import { useEffect, useState } from "react";
 
 export default function Calculator({ setWindowState }) {
