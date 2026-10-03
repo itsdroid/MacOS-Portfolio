@@ -11,12 +11,12 @@ export default function YTMusic({ setWindowState }) {
             <main className="yt-music">
                 <div
                     className="yt-background yt-background-mobile"
-                    style={{ backgroundImage: "url('/YTMusic/bg-mobile.webp')" }}
+                    style={{ backgroundImage: "url('/YTMusic/MusicWall.jpg')" }}
                 />
 
                 <div
                     className="yt-background yt-background-desktop"
-                    style={{ backgroundImage: "url('/YTMusic/bg.webp')" }}
+                    style={{ backgroundImage: "url('/YTMusic/MusicWall.jpg')" }}
                 />
 
                 <div className="yt-overlay" />

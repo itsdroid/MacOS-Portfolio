@@ -6,7 +6,7 @@ export default function Dock({ windowState, setWindowState }) {
         <div className="dock">
             <div className="dock-container">
                 <li className="li-1"
-                    onClick={() => { setWindowState(state => ({ ...state, Github: true })) }}
+                    onClick={() => { setWindowState(state => ({ ...state, NotFound: true })) }}
                 >
                     {/* <div className="name">Finder</div> */}
                     <img className="ico" src="https://uploads-ssl.webflow.com/5f7081c044fb7b3321ac260e/5f70853981255cc36b3a37af_finder.png" alt="" />
@@ -15,13 +15,13 @@ export default function Dock({ windowState, setWindowState }) {
                 <li className="li-2"
                     onClick={() => { setWindowState(state => ({ ...state, CLI: true })) }}
                 >
-                    {/* <div className="name">Siri</div> */}
+                    {/* <div className="name">Terminal</div> */}
                     <img className="ico" src="/dock-icons/terminal.png" alt="" />
                 </li>
 
                 <li className="li-3"
                     onClick={() => { setWindowState(state => ({ ...state, Github: true })) }}>
-                    {/* <div className="name">LaunchPad</div> */}
+                    {/* <div className="name">GitHub</div> */}
                     <img style={{width:"95%" , height: "95%"}} className="ico" src="/dock-icons/github.svg" alt="" />
                 </li>
 
@@ -35,7 +35,7 @@ export default function Dock({ windowState, setWindowState }) {
                 <li className="li-6"
                     onClick={() => { setWindowState(state => ({ ...state, Resume: true })) }}
                 >
-                    {/* <div className="name">Reminders</div> */}
+                    {/* <div className="name">Resume</div> */}
                     <img className="ico" src="/dock-icons/pdf.png" alt="" />
                 </li>
               
@@ -43,19 +43,19 @@ export default function Dock({ windowState, setWindowState }) {
                 <li className="li-9"
                     onClick={() => { setWindowState(state => ({ ...state, Clock: true })) }}
                 >
-                    <div className="name">FaceTime</div>
+                    <div className="name">Clock</div>
                     <img className="ico" src="/dock-icons/clock.webp" alt="" />
                 </li>
                 <li className="li-10"
                     onClick={() => { setWindowState(state => ({ ...state, Spotify: true })) }}
                 >
-                    {/* <div className="name">Music</div> */}
+                    {/* <div className="name">Spotify</div> */}
                     <img style={{width:"87%" , height: "87%"}} className="ico" src="/dock-icons/spotify.webp" alt="" />
                 </li>
                 <li className="li-11"
                     onClick={() => { window.open("mailto:shubhampopalghat77@gmail.com") }}
                 >
-                    {/* <div className="name">Music</div> */}
+                    {/* <div className="name">Mail</div> */}
                     <img className="ico" src="/dock-icons/mail.webp" alt="" />
                 </li>
 
@@ -63,19 +63,19 @@ export default function Dock({ windowState, setWindowState }) {
                 <li className="li-13"
                     onClick={() => { window.open("https://www.linkedin.com/in/shubham-popalghat/") }}
                 >
-                    <div className="name">App Store</div>
+                    <div className="name">Linkedin</div>
                     <img className="ico" src="/dock-icons/linkedin.svg" alt="" />
                 </li>
 
                 <li className="li-14"
                     onClick={() => { setWindowState(state => ({ ...state, YTMusic: true })) }}
                 >
-                    <div className="name">Safari</div>
+                    <div className="name">YTMusic</div>
                     <img className="ico" src="/dock-icons/youtube_music.webp" alt="" />
                 </li>
 
                 <li className="li-bin li-15"
-                    onClick={() => { setWindowState(state => ({ ...state, Github: true })) }}
+                    onClick={() => { setWindowState(state => ({ ...state, NotFound: true })) }}
                 >
                     <div className="name">Bin</div>
                     <img className="ico ico-bin" src="https://www.icons101.com/icons/98/Yosemite_Flat_Icons_by_dtafalonso/128/Trash%20Empty.png" alt="" />
